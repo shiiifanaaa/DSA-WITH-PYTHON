@@ -4,15 +4,6 @@ This repository contains my daily learning and practice of **Data Structures and
 
 I am starting with the fundamentals of DSA and gradually building my problem-solving and logical thinking skills through theoretical learning and practical Python programs.
 
-## Topics Covered
-
-- Introduction to Data Structures and Algorithms
-- Linear and Nonlinear Data Structures
-- Time and Space Complexity
-- Big O Notation
-- Arrays and Python Lists
-- Array Traversal
-
 ## Repository Contents
 
 Each day's folder contains:
