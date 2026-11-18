@@ -1,106 +1,68 @@
 
-# Day 05 - Arrays and Python Lists
+# Day 04 - Big O Notation
 
-## 1. What is an Array?
+## 1. What is Big O Notation?
 
-An array is a data structure used to store multiple elements.
+Big O notation describes the upper-bound growth rate of an algorithm's time or space requirements as input size increases.
 
-Elements are accessed using their index.
+It helps us understand how an algorithm performs for larger inputs.
 
-In Python, lists are commonly used for array-like operations.
+## 2. Common Big O Complexities
 
-## 2. Creating a List
+### O(1) - Constant Time
 
-numbers = [10, 20, 30, 40, 50]
+The execution time remains constant regardless of input size.
 
-print(numbers)
+Example:
 
-Output:
-[10, 20, 30, 40, 50]
-
-## 3. Indexing
-
-Indexing is used to access individual elements.
-
-Python uses zero-based indexing.
-
-numbers = [10, 20, 30, 40, 50]
-
+numbers = [10, 20, 30, 40]
 print(numbers[0])
-print(numbers[2])
-print(numbers[-1])
 
-Output:
-10
-30
-50
+### O(n) - Linear Time
 
-## 4. Updating Elements
+Execution grows proportionally with input size.
+
+Example:
 
 numbers = [10, 20, 30, 40]
 
-numbers[1] = 25
+for num in numbers:
+    print(num)
 
-print(numbers)
+### O(n²) - Quadratic Time
 
-Output:
-[10, 25, 30, 40]
+Execution grows proportionally to the square of input size.
 
-## 5. Inserting Elements
+Example:
 
-### append()
+for i in range(n):
+    for j in range(n):
+        print(i, j)
 
-Adds an element at the end.
+## 3. Comparison
 
-numbers = [10, 20, 30]
-numbers.append(40)
+| Complexity | Meaning | Example |
+|---|---|---|
+| O(1) | Constant | Accessing an element |
+| O(n) | Linear | Traversing a list |
+| O(n²) | Quadratic | Nested loops |
 
-Output:
-[10, 20, 30, 40]
+## 4. Practice Questions
 
-### insert()
+1. Accessing the first element of a list.
+   Answer: O(1)
 
-Adds an element at a particular index.
+2. Printing every element in a list.
+   Answer: O(n)
 
-numbers = [10, 20, 30]
-numbers.insert(1, 15)
+3. Using two nested loops.
+   Answer: O(n²)
 
-Output:
-[10, 15, 20, 30]
+## 5. Key Takeaways
 
-## 6. Deleting Elements
+- O(1) does not depend on input size.
+- O(n) grows linearly.
+- O(n²) grows quadratically.
+- Lower growth rates are generally preferable for large inputs.
 
-### remove()
 
-Removes an element by value.
-
-numbers = [10, 20, 30]
-numbers.remove(20)
-
-Output:
-[10, 30]
-
-### pop()
-
-Removes an element by index. If no index is given, removes the last element.
-
-numbers = [10, 20, 30]
-numbers.pop()
-
-Output:
-[10, 20]
-
-## 7. DSA Practice Questions
-
-1. Create a list containing five numbers.
-2. Access the first and last elements.
-3. Update the second element.
-4. Insert a new element.
-5. Delete an element.
-
-## 8. Key Takeaways
-
-- Python lists store multiple elements.
-- Indexing starts from zero.
-- Lists are mutable.
-- append(), insert(), remove() and pop() are common operations.
