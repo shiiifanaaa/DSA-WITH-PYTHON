@@ -1,5 +1,5 @@
 
-# DAY 2 - LINEAR SEARCH
+# DAY 8 - LINEAR SEARCH
 
 # 1. Search for an element in a list
 
