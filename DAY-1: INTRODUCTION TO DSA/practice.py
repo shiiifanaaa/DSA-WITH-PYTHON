@@ -1,4 +1,3 @@
-
 # DAY 1 - INTRODUCTION TO DSA
 # Topic: Basic Problem Solving and Algorithms
 
